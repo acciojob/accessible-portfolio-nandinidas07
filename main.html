@@ -1,38 +1,37 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARIA Role Implementation</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-	
-  <header role="banner">
-    <h1>ARIA Role Implementation</h1>
-  </header>
+	 <h1 role="heading">ARIA Role Implementation</h1>
 
   <nav role="navigation">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
+    <a href="#home" role="link">Home</a>
+    <a href="#about" role="link">About</a>
+    <a href="#contact" role="link">Contact</a>
   </nav>
+
+ 
 
   <main role="main">
     <section>
-      <img src="image.jpg" alt="Description of the image" role="img">
-      <p>This is an image description section.</p>
+      <h2 role="heading">Image </h2>
+      <img src="https://via.placeholder.com/150" alt="Placeholder image" role="img" />
     </section>
-
+<section>
+	<h2 role="heading">Brief Description</h2>
+	
+</section>
     <section>
-      <h2>Things to Remember</h2>
+      <h2 role="heading">Benefits List</h2>
       <ul role="list">
-        <li role="listitem">Use semantic HTML</li>
-        <li role="listitem">Use ARIA only when necessary</li>
-        <li role="listitem">Ensure all users can navigate</li>
+        <li role="listitem">Improves usability</li>
+        <li role="listitem">Supports screen readers</li>
+        <li role="listitem">Follows accessibility standards</li>
       </ul>
     </section>
   </main>
@@ -40,9 +39,6 @@
   <footer role="contentinfo">
     <p>&copy; 2025 Accessible Web</p>
   </footer>
-    <script type="text/javascript" src="./script.js">
-</script>
 
 </body>
-
 </html>
